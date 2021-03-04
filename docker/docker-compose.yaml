@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  demoapp:
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile
+    image: demoapp
+    ports:
+      - 9090:9090
